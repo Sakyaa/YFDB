@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'YFDB_Example' do
+  pod 'YFDB', :path => '../'
+
+  target 'YFDB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
