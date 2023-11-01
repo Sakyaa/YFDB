@@ -57,14 +57,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6BEF94C8C37F565B433C00EB /* YFDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YFDB.podspec; path = ../YFDB.podspec; sourceTree = "<group>"; };
+		6BEF94C8C37F565B433C00EB /* YFDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YFDB.podspec; path = ../YFDB.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DCCD030F003E2F03EF63DA3 /* Pods_YFDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YFDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F561025F10AC104EE32CED4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F561025F10AC104EE32CED4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94CF172A4A361F2639FCC0CF /* Pods-YFDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFDB_Tests.release.xcconfig"; path = "Target Support Files/Pods-YFDB_Tests/Pods-YFDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		96CE944C865A9700B98A2F39 /* Pods-YFDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFDB_Example.debug.xcconfig"; path = "Target Support Files/Pods-YFDB_Example/Pods-YFDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B7C369D7746FD2FEBC4DDD0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B7C369D7746FD2FEBC4DDD0D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EEFF9717C334CC458CB3DD53 /* Pods_YFDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YFDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED95FD008FAF99B4DC4BE4 /* Pods-YFDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFDB_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YFDB_Tests/Pods-YFDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				F8ED95FD008FAF99B4DC4BE4 /* Pods-YFDB_Tests.debug.xcconfig */,
 				94CF172A4A361F2639FCC0CF /* Pods-YFDB_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +494,7 @@
 			baseConfigurationReference = 96CE944C865A9700B98A2F39 /* Pods-YFDB_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFDB/YFDB-Prefix.pch";
 				INFOPLIST_FILE = "YFDB/YFDB-Info.plist";
@@ -510,6 +511,7 @@
 			baseConfigurationReference = 398A220956E2FA74656C5508 /* Pods-YFDB_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YFDB/YFDB-Prefix.pch";
 				INFOPLIST_FILE = "YFDB/YFDB-Info.plist";
