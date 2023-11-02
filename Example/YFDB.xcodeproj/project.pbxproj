@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363CC6C42AF34B49008D883F /* YFPersonVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 363CC6C32AF34B49008D883F /* YFPersonVO.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		363CC6C22AF34B49008D883F /* YFPersonVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPersonVO.h; sourceTree = "<group>"; };
+		363CC6C32AF34B49008D883F /* YFPersonVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPersonVO.m; sourceTree = "<group>"; };
 		398A220956E2FA74656C5508 /* Pods-YFDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFDB_Example.release.xcconfig"; path = "Target Support Files/Pods-YFDB_Example/Pods-YFDB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YFDB_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFDB_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YFViewController.h */,
 				6003F5A6195388D20070C39A /* YFViewController.m */,
+				363CC6C22AF34B49008D883F /* YFPersonVO.h */,
+				363CC6C32AF34B49008D883F /* YFPersonVO.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -366,6 +371,7 @@
 			files = (
 				6003F59E195388D20070C39A /* YFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YFViewController.m in Sources */,
+				363CC6C42AF34B49008D883F /* YFPersonVO.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
